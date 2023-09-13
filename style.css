@@ -1,0 +1,229 @@
+html{
+    font-size: 14px;
+}
+
+body{
+    margin: 0;
+    height: 100vh;
+    background-image: url(./images/bg-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: top;
+    font-family: 'Raleway', sans-serif;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    padding: 5em 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+
+
+/* typography */
+p, h1{
+    margin: 0;
+}
+
+h1{
+    font-size: 3rem;
+}
+
+p{
+    opacity: .9;
+}
+
+
+/* first section */
+.section-1{
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5em;
+    padding: 3em;
+    border-top-right-radius: 100px;
+}
+
+.container-of-icons{
+    display: flex;
+    gap: 1.3em;
+}
+
+.div-icon{
+    background-color: hsl(229, 57%, 11%);
+    border-radius: 10px;
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* second section */
+.section-2-container{
+    background-color: hsl(228, 56%, 26%);
+    width: 100%;
+    box-sizing: border-box;
+    border-radius: 10px;
+    padding: 3em 3em 5em 3em;
+    grid-area: one;
+    position: relative;
+    color: white;
+}
+
+.top-text p{
+    text-align: center;
+    margin-bottom: 1em;
+    font-size: 1.1rem;
+    color: rgba(255, 255, 255, .7);
+}
+
+span{
+    font-weight: 700;
+    color: rgba(255, 255, 255, 1);
+}
+
+.linear-gradient{
+    background: linear-gradient(to right, hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+    width: 100%;
+    max-width: 175px;
+    height: 13px;
+    border-radius: 10px;
+    position: relative;
+}
+
+.blue-background-of-linear-gradient{
+    padding: .22em;
+    background-color: rgb(20, 31, 75);
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.white-dot{
+    position: absolute;
+    background-color: white;
+    height: 10px;
+    width: 10px;
+    border-radius: 5px;
+    right: 3px;
+    top: 1px;
+}
+
+.bottom-text{
+    display: flex;
+    justify-content: space-between;
+}
+
+.bottom-text p{
+    font-size: .9rem;
+    letter-spacing: 1px;
+}
+
+.positioning-div{
+    background-color: white;
+    color: rgb(21, 26, 51);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .7em;
+    position: absolute;
+    bottom: -40px;
+    left: 0;
+    right: 0;
+    width: 70%;
+    margin: 0 auto;
+    max-width: 160px;
+    padding: .8em;
+    border-radius: 10px;
+}
+
+.positioning-div P{
+    color: gray;
+    font-size: 1rem;
+    letter-spacing: 1px;
+    font-weight: 700;
+}
+
+
+
+/* media query */
+@media(min-width: 769px){
+    body{
+        background-image: url(./images/bg-desktop.png);
+        background-color: hsl(229, 57%, 11%);
+        background-size: auto;
+        background-position: bottom;
+        padding: 0;
+        position: relative;
+        min-height: 100%;
+    }
+
+    main{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 900px;
+        padding: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -70%);
+    }
+
+    .section-1{
+        width: 35%;
+        gap: 2.3em;
+    }
+
+    .section-2{
+        width: 65%;
+        display: flex;
+        align-items: end;
+    }
+
+    .section-2-container{
+        width: 100%;
+        padding: 3em 3em 3em 3em;
+        box-sizing: border-box;
+    }
+
+    .linear-gradient{
+        max-width: 380px;
+    }
+
+    .top-text p{
+        text-align: start;
+    }
+
+    .positioning-div{
+        margin: 0;
+        right: auto;
+        left: auto;
+        top: -45px;
+        bottom: auto;
+        right: 40px;
+        border-bottom-right-radius: 0px;
+    }
+
+    .parent-div-of-triangle{
+        position: relative;
+    }
+
+    .triangle{
+        position: absolute;
+        bottom: -56px;
+        right: -20px;
+        width: 0;
+        border-left: 30px solid transparent;
+        border-top: 30px solid white;
+    }
+}
+
+
+
